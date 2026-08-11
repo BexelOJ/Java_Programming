@@ -86,7 +86,20 @@ C++ set               ↔ TreeSet
 C++ unordered_set     ↔ HashSet
 
 //---------------------------------------------------
+Java arrays:
 
+C++                              Java
+------------------------------------------------
+std::array<int, 5>               int[] 
+fixed size                       fixed size
+size()                           length
+front()                          arr[0]
+back()                           arr[arr.length - 1]
+
+begin()/end()                    no direct equivalent
+empty()                          no direct equivalent
+
+max_size()                       no equivalent
 
 //---------------------------------------------------
 
@@ -96,5 +109,6 @@ C++ unordered_set     ↔ HashSet
 
 
 */
+
 
 
