@@ -8,13 +8,9 @@ public class Java_20260815_decorator_StarbuzzCoffee {
 
         beverage = new Java_20260815_decorator_Whip(beverage);
 
-        System.out.println(
-            beverage.getDescription()
-        );
+        System.out.println(beverage.getDescription());
 
-        System.out.println(
-            "$" + beverage.cost()
-        );
+        System.out.println("$" + beverage.cost());
     }
 
 }
