@@ -1,8 +1,0 @@
-public class Java_20260820_AF_Mushroom implements Java_20260820_AF_Veggies {
-
-    @Override
-    public String toString() {
-        return "Mushroom";
-    }
-}
-
