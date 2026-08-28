@@ -6,31 +6,25 @@ public class Java_20260818_command_Main {
         // Create receivers
         //---------------------------------------------------
 
-        Java_20260818_command_Light livingRoomLight =
-                new Java_20260818_command_Light("Living Room");
+        Java_20260818_command_Light livingRoomLight = new Java_20260818_command_Light("Living Room");
 
-        Java_20260818_command_GarageDoor garageDoor =
-                new Java_20260818_command_GarageDoor("Garage");
+        Java_20260818_command_GarageDoor garageDoor = new Java_20260818_command_GarageDoor("Garage");
 
         //---------------------------------------------------
         // Create commands
         //---------------------------------------------------
 
-        Java_20260818_command_Command livingRoomLightOn =
-                new Java_20260818_command_LightOnCommand(livingRoomLight);
+        Java_20260818_command_Command livingRoomLightOn = new Java_20260818_command_LightOnCommand(livingRoomLight);
 
-        Java_20260818_command_Command livingRoomLightOff =
-                new Java_20260818_command_LightOffCommand(livingRoomLight);
+        Java_20260818_command_Command livingRoomLightOff = new Java_20260818_command_LightOffCommand(livingRoomLight);
 
-        Java_20260818_command_Command garageDoorOpen =
-                new Java_20260818_command_GarageDoorOpenCommand(garageDoor);
+        Java_20260818_command_Command garageDoorOpen = new Java_20260818_command_GarageDoorOpenCommand(garageDoor);
 
         //---------------------------------------------------
         // Create remote
         //---------------------------------------------------
 
-        Java_20260818_command_RemoteControl remote =
-                new Java_20260818_command_RemoteControl();
+        Java_20260818_command_RemoteControl remote = new Java_20260818_command_RemoteControl();
 
         //---------------------------------------------------
         // Light ON

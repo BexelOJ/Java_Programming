@@ -4,10 +4,7 @@ public class Java_20260821_COR_Purchase {
     private double amount;
     private String purpose;
 
-    public Java_20260821_COR_Purchase(
-            int number,
-            double amount,
-            String purpose) {
+    public Java_20260821_COR_Purchase(int number, double amount, String purpose) {
 
         this.number = number;
         this.amount = amount;
