@@ -527,7 +527,118 @@ public class Java_20260811_coll_ArrayList_01 {
 
 /*
 //---------------------------------------------------
-We have covered important ArrayList operations:
+
+
+//---------------------------------------------------
+Output:
+
+Initial ArrayList:
+[10, 20, 30, 40, 50]
+
+After add(60):
+[10, 20, 30, 40, 50, 60]
+
+After add(2, 100):
+[10, 20, 100, 30, 40, 50, 60]
+
+list.get(2): 100
+
+After set(2, 200):
+[10, 20, 200, 30, 40, 50, 60]
+
+list.size(): 7
+
+list.isEmpty(): false
+
+list.contains(30): true
+
+list.indexOf(30): 3
+
+list.lastIndexOf(30): 7
+
+After remove(2):
+[10, 20, 30, 40, 50, 60, 30]
+
+After remove(Integer.valueOf(30)):
+[10, 20, 40, 50, 60, 30]
+
+After addAll():
+[10, 20, 40, 50, 60, 30, 70, 80, 90]
+
+After addAll(2, list3):
+[10, 20, 100, 110, 40, 50, 60, 30, 70, 80, 90]
+
+list.containsAll(list3): true
+
+After removeAll(list3):
+[10, 20, 40, 50, 60, 30, 70, 80, 90]
+
+After retainAll(keep):
+[20, 40, 60]
+
+After clear(): []
+
+New list:
+[50, 20, 40, 10, 30]
+
+Iterator:
+50 20 40 10 30
+
+ListIterator forward:
+50 20 40 10 30
+
+ListIterator backward:
+30 10 40 20 50
+
+Enhanced for loop:
+50 20 40 10 30
+
+Normal for loop:
+50 20 40 10 30
+
+forEach():
+50 20 40 10 30
+
+After list.sort():
+[10, 20, 30, 40, 50]
+
+After Collections.sort():
+[10, 20, 30, 40, 50]
+
+After Collections.reverse():
+[50, 40, 30, 20, 10]
+
+After replaceAll(value * 2):
+[100, 80, 60, 40, 20]
+
+After removeIf(value > 50):
+[40, 20]
+
+subList(1, 4):
+[20, 30, 40]
+
+toArray():
+[10, 20, 30, 40, 50]
+
+toArray(new Integer[0]):
+[10, 20, 30, 40, 50]
+
+clone():
+[10, 20, 30, 40, 50]
+
+numbers.equals(cloned): true
+
+numbers.hashCode(): 38490301
+
+ensureCapacity(100) executed
+
+trimToSize() executed
+
+After clear(): []
+
+
+//---------------------------------------------------
+
 
 //---------------------------------------------------
 

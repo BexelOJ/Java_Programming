@@ -228,6 +228,130 @@ public class Java_20260811_coll_Array_01 {
 
 /*
 //---------------------------------------------------
+Output:
+
+Initial array:
+10 20 30 40 50
+
+arr[0] : 10
+arr[1] : 20
+arr[4] : 50
+
+After arr[2] = 100:
+
+10 20 100 40 50
+
+arr.length : 5
+First element : 10
+Last element : 50
+
+Normal for loop:
+10 20 100 40 50
+
+Enhanced for loop:
+10 20 100 40 50
+
+After multiplying by 2:
+20 40 200 80 100
+
+Arrays.toString():
+[20, 40, 200, 80, 100]
+
+After Arrays.sort():
+[10, 20, 30, 40, 50]
+
+binarySearch(30):
+2
+
+After Arrays.fill(100):
+[100, 100, 100, 100, 100]
+
+arr2 after copyOf():
+[100, 100, 100, 100, 100]
+
+Arrays.equals(arr, arr2):
+true
+
+arr3.length: 5
+
+Default arr3:
+[0, 0, 0, 0, 0]
+
+arr4 after clone():
+[100, 100, 100, 100, 100]
+arr.equals(arr2): false
+
+Arrays.equals(arr, arr2):
+true
+
+
+
+//---------------------------------------------------
+
+
+Arrays.toString()	
+Convert 1-D array to printable String	
+Arrays.toString(arr)
+
+Arrays.sort()	
+Sort array	
+Arrays.sort(arr)
+
+Arrays.binarySearch()	
+Search sorted array	
+Arrays.binarySearch(arr, 20)
+
+Arrays.copyOf()	
+Copy array	
+Arrays.copyOf(arr, 5)
+
+Arrays.copyOfRange()	
+Copy part of array	
+Arrays.copyOfRange(arr, 1, 4)
+
+Arrays.fill()	
+Fill array with value	
+Arrays.fill(arr, 0)
+
+Arrays.equals()	
+Compare arrays	
+Arrays.equals(a, b)
+
+Arrays.deepEquals()	
+Compare multidimensional arrays	
+Arrays.deepEquals(a, b)
+
+Arrays.deepToString()	
+Print multidimensional arrays	
+Arrays.deepToString(arr)
+
+Arrays.deepHashCode()	
+Hash for multidimensional arrays	
+Arrays.deepHashCode(arr)
+
+Arrays.hashCode()	
+Hash code of array	
+Arrays.hashCode(arr)
+
+Arrays.mismatch()
+Find first differing index	
+Arrays.mismatch(a, b)
+
+Arrays.compare()	
+Lexicographically compare arrays	
+Arrays.compare(a, b)
+
+Arrays.copyOf()	
+Create resized copy	
+Arrays.copyOf(arr, 10)
+
+Arrays.setAll()	
+Generate values using function	
+Arrays.setAll(arr, i -> i * 2)
+
+Arrays.parallelSort()	
+Parallel sorting	
+Arrays.parallelSort(arr)
 
 
 
