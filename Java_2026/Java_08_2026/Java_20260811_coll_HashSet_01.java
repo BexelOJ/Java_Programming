@@ -308,19 +308,26 @@ We have covered important ArrayList operations:
 
 add()
 remove()
+
 contains()
 size()
 isEmpty()
+
 addAll()
 containsAll()
+
 removeAll()
 retainAll()
+
 clear()
+
 iterator()
+
 forEach()
 toArray()
 removeIf()
 equals()
+
 hashCode()
 
 //---------------------------------------------------

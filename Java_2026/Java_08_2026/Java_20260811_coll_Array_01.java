@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Java_20260811_coll_Array_01 {
 
     public static void main(String[] args) {
@@ -156,7 +158,7 @@ public class Java_20260811_coll_Array_01 {
         // 14. Arrays.copyOf()
         // ------------------------------------------
 
-        int[] arr2 = java.util.Arrays.copyOf(arr, arr.length);
+        int[] arr2 = Arrays.copyOf(arr, arr.length);
 
         System.out.println(
             "\narr2 after copyOf(): \n" +

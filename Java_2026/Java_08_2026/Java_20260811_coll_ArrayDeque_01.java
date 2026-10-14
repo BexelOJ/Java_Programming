@@ -452,28 +452,37 @@ We have covered important ArrayDeque operations:
 add()
 addFirst()
 addLast()
+
 getFirst()
 getLast()
+
 remove()
 removeFirst()
 removeLast()
+
 offer()
 offerFirst()
 offerLast()
+
 peek()
 peekFirst()
 peekLast()
+
 poll()
 pollFirst()
 pollLast()
+
 push()
 pop()
+
 contains()
 size()
 isEmpty()
 clear()
+
 iterator()
 descendingIterator()
+
 forEach()
 toArray()
 
@@ -504,6 +513,106 @@ ArrayDeque
 So ArrayDeque is particularly useful because one class supports queue, deque, and stack behavior
 
 //---------------------------------------------------
+Output:
+
+Initial ArrayDeque:
+[10, 20, 30, 40, 50]
+
+After add(60):
+[10, 20, 30, 40, 50, 60]
+
+After addFirst(5):
+[5, 10, 20, 30, 40, 50, 60]
+
+After addLast(70):
+[5, 10, 20, 30, 40, 50, 60, 70]
+
+deque.getFirst(): 5
+
+deque.getLast(): 70
+
+deque.element(): 5
+
+deque.remove(): 5
+
+After remove():
+[10, 20, 30, 40, 50, 60, 70]
+
+deque.removeFirst(): 10
+
+After removeFirst():
+[20, 30, 40, 50, 60, 70]
+
+deque.removeLast(): 70
+
+After removeLast():
+[20, 30, 40, 50, 60]
+
+After offer(100):
+[20, 30, 40, 50, 60, 100]
+
+After offerFirst(1):
+[1, 20, 30, 40, 50, 60, 100]
+
+After offerLast(200):
+[1, 20, 30, 40, 50, 60, 100, 200]
+
+deque.peek(): 1
+
+deque.peekFirst(): 1
+
+deque.peekLast(): 200
+
+deque.poll(): 1
+
+After poll():
+[20, 30, 40, 50, 60, 100, 200]
+
+deque.pollFirst(): 20
+
+After pollFirst():
+[30, 40, 50, 60, 100, 200]
+
+deque.pollLast(): 200
+
+After pollLast():
+[30, 40, 50, 60, 100]
+
+After push(10):
+[10, 30, 40, 50, 60, 100]
+
+deque.pop(): 10
+
+After pop():
+[30, 40, 50, 60, 100]
+
+deque.contains(30): true
+
+deque.size(): 5
+
+deque.isEmpty(): false
+
+Iterator:
+30 40 50 60 100
+
+Descending Iterator:
+100 60 50 40 30
+
+Enhanced for loop:
+30 40 50 60 100
+
+forEach():
+30 40 50 60 100
+
+toArray():
+[30, 40, 50, 60, 100]
+
+toArray(new Integer[0]):
+[30, 40, 50, 60, 100]
+
+After clear(): []
+
+deque.isEmpty(): true
 
 
 //---------------------------------------------------
