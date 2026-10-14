@@ -791,6 +791,146 @@ TreeMap
     → sorted by key
 
 //---------------------------------------------------
+Output:
+
+Initial TreeMap:
+{A=100, B=200, C=300, D=400, E=500}
+
+After put("F", 600):
+{A=100, B=200, C=300, D=400, E=500, F=600}
+
+After put("C", 999):
+{A=100, B=200, C=999, D=400, E=500, F=600}
+
+After putIfAbsent("G", 700):
+{A=100, B=200, C=999, D=400, E=500, F=600, G=700}
+
+map.get("C"): 999
+
+map.getOrDefault("Z", 0): 0
+
+map.containsKey("B"): true
+
+map.containsValue(400): true
+
+After remove("F"):
+{A=100, B=200, C=999, D=400, E=500, G=700}
+
+After remove("E", 500):
+{A=100, B=200, C=999, D=400, G=700}
+Result of remove(): true
+
+After replace("D", 444):
+{A=100, B=200, C=999, D=444, G=700}
+
+After replace("B", 200, 222):
+{A=100, B=222, C=999, D=444, G=700}
+Result of replace(): true
+
+After putAll(map2):
+{A=100, B=222, C=999, D=444, G=700, H=800, I=900}
+
+map.size(): 7
+
+map.isEmpty(): false
+
+map.firstKey(): A
+
+map.lastKey(): I
+
+map.lowerKey("D"): C
+
+map.floorKey("D"): D
+
+map.ceilingKey("D"): D
+
+map.higherKey("D"): G
+
+map.firstEntry(): A=100
+
+map.lastEntry(): I=900
+
+map.lowerEntry("D"): C=999
+
+map.floorEntry("D"): D=444
+
+map.ceilingEntry("D"): D=444
+
+map.higherEntry("D"): G=700
+
+map.pollFirstEntry(): A=100
+
+After pollFirstEntry():
+{B=222, C=999, D=444, G=700, H=800, I=900}
+
+map.pollLastEntry(): I=900
+
+After pollLastEntry():
+{B=222, C=999, D=444, G=700, H=800}
+
+map.headMap("D"):
+{B=222, C=999}
+
+map.tailMap("D"):
+{D=444, G=700, H=800}
+
+map.subMap("B", "G"):
+{B=222, C=999, D=444}
+
+map.descendingMap():
+{H=800, G=700, D=444, C=999, B=222}
+
+map.navigableKeySet():
+[B, C, D, G, H]
+
+map.descendingKeySet():
+[H, G, D, C, B]
+
+map.comparator(): null
+
+map.keySet():
+[B, C, D, G, H]
+
+map.values():
+[222, 999, 444, 700, 800]
+
+map.entrySet():
+[B=222, C=999, D=444, G=700, H=800]
+
+Iterator over keySet():
+B = 222  C = 999  D = 444  G = 700  H = 800
+
+Iterator over entrySet():
+B = 222  C = 999  D = 444  G = 700  H = 800
+
+Enhanced for loop:
+B = 222  C = 999  D = 444  G = 700  H = 800
+
+forEach():
+B = 222  C = 999  D = 444  G = 700  H = 800
+
+After compute("B", value + 100):
+{B=322, C=999, D=444, G=700, H=800}
+
+After computeIfAbsent("J"):
+{B=322, C=999, D=444, G=700, H=800, J=1000}
+
+After computeIfPresent("B"):
+{B=422, C=999, D=444, G=700, H=800, J=1000}
+
+After merge("A", 50):
+{A=50, B=422, C=999, D=444, G=700, H=800, J=1000}
+
+After replaceAll(value + 1):
+{A=51, B=423, C=1000, D=445, G=701, H=801, J=1001}
+
+map.equals(map3): true
+
+map.hashCode(): 4609
+
+After clear(): {}
+
+map.isEmpty(): true
 
 
 //---------------------------------------------------

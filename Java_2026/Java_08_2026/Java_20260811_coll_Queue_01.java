@@ -270,6 +270,58 @@ toArray()
 clear()
 
 //---------------------------------------------------
+Output:
+
+Initial Queue:
+[10, 20, 30, 40, 50]
+
+After add(60):
+[10, 20, 30, 40, 50, 60]
+
+After offer(70):
+[10, 20, 30, 40, 50, 60, 70]
+
+queue.element(): 10
+
+queue.peek(): 10
+
+queue.remove(): 10
+
+After remove():
+[20, 30, 40, 50, 60, 70]
+
+queue.poll(): 20
+
+After poll():
+[30, 40, 50, 60, 70]
+
+queue.contains(30): true
+
+queue.size(): 5
+
+queue.isEmpty(): false
+
+Iterator:
+30 40 50 60 70
+
+Enhanced for loop:
+30 40 50 60 70
+
+forEach():
+30 40 50 60 70
+
+toArray():
+[30, 40, 50, 60, 70]
+
+toArray(new Integer[0]):
+[30, 40, 50, 60, 70]
+
+After remove(Integer.valueOf(30)):
+[40, 50, 60, 70]
+
+After clear(): []
+
+queue.isEmpty(): true
 
 
 //---------------------------------------------------

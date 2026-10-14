@@ -540,6 +540,103 @@ removeIf()
 clear()
 
 //---------------------------------------------------
+Output:
+
+Initial TreeSet:
+[10, 20, 30, 40, 50]
+
+After add(60):
+[10, 20, 30, 40, 50, 60]
+
+After add(30):
+[10, 20, 30, 40, 50, 60]
+Result of add(30): false
+
+After remove(30):
+[10, 20, 40, 50, 60]
+Result of remove(30): true
+
+set.contains(40): true
+
+set.size(): 5
+
+set.isEmpty(): false
+
+set.first(): 10
+
+set.last(): 60
+
+set.lower(40): 20
+
+set.floor(40): 40
+
+set.ceiling(40): 40
+
+set.higher(40): 50
+
+set.pollFirst(): 10
+
+After pollFirst():
+[20, 40, 50, 60]
+
+set.pollLast(): 60
+
+After pollLast():
+[20, 40, 50]
+
+After addAll(set2):
+[20, 40, 50, 70, 80, 90]
+
+set.containsAll(set2): true
+
+After removeAll(set2):
+[20, 40, 50]
+
+After retainAll(keep):
+[20, 40, 50]
+
+numbers.headSet(30):
+[10, 20]
+
+numbers.tailSet(30):
+[30, 40, 50]
+
+numbers.subSet(20, 50):
+[20, 30, 40]
+
+numbers.descendingSet():
+[50, 40, 30, 20, 10]
+
+numbers.comparator(): null
+
+Iterator:
+10 20 30 40 50
+
+Descending Iterator:
+50 40 30 20 10
+
+Enhanced for loop:
+10 20 30 40 50
+
+forEach():
+10 20 30 40 50
+
+After removeIf(value > 30):
+[10, 20, 30]
+
+toArray():
+[10, 20, 30]
+
+toArray(new Integer[0]):
+[10, 20, 30]
+
+numbers.equals(set3): true
+
+numbers.hashCode(): 60
+
+After clear(): []
+
+numbers.isEmpty(): true
 
 
 //---------------------------------------------------

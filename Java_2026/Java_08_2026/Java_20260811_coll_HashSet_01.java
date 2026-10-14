@@ -358,7 +358,64 @@ No guaranteed iteration order
 
 
 //---------------------------------------------------
+Output:
 
+Initial HashSet:
+[50, 20, 40, 10, 30]
+
+After add(60):
+[50, 20, 40, 10, 60, 30]
+
+After add(30):
+[50, 20, 40, 10, 60, 30]
+Result of add(30): false
+
+After remove(30):
+[50, 20, 40, 10, 60]
+Result of remove(30): true
+
+set.contains(40): true
+
+set.size(): 5
+
+set.isEmpty(): false
+
+After addAll(set2):
+[80, 50, 20, 70, 40, 10, 90, 60]
+
+set.containsAll(set2): true
+
+After removeAll(set2):
+[50, 20, 40, 10, 60]
+
+After retainAll(keep):
+[40, 10, 60]
+
+Iterator:
+40 10 60
+
+Enhanced for loop:
+40 10 60
+
+forEach():
+40 10 60
+
+After removeIf(value > 40):
+[40, 10]
+
+toArray():
+[40, 10]
+
+toArray(new Integer[0]):
+[40, 10]
+
+set.equals(set3): true
+
+set.hashCode(): 50
+
+After clear(): []
+
+set.isEmpty(): true
 
 
 //---------------------------------------------------

@@ -724,6 +724,69 @@ clone()
 equals()
 hashCode()
 //---------------------------------------------------
+Output:
+
+Initial PriorityQueue:
+[10, 20, 50, 30, 40]
+
+After add(5):
+[5, 20, 10, 30, 40, 50]
+
+After offer(60):
+[5, 20, 10, 30, 40, 50, 60]
+
+queue.peek(): 5
+
+queue.element(): 5
+
+queue.poll(): 5
+
+After poll():
+[10, 20, 50, 30, 40, 60]
+
+queue.remove(): 10
+
+After remove():
+[20, 30, 50, 60, 40]
+
+After remove(30):
+[20, 40, 50, 60]
+
+queue.contains(40): true
+
+queue.size(): 4
+
+queue.isEmpty(): false
+
+Iterator:
+20 40 50 60
+
+Enhanced for loop:
+20 40 50 60
+
+forEach():
+20 40 50 60
+
+toArray():
+[20, 40, 50, 60]
+
+toArray(new Integer[0]):
+[20, 40, 50, 60]
+
+queue.comparator(): null
+
+After clear(): []
+
+queue.isEmpty(): true
+
+Max PriorityQueue:
+[50, 40, 30, 10, 20]
+
+Max PriorityQueue poll order:
+50 40 30 20 10
+
+Min PriorityQueue poll order:
+10 20 30 40 50
 
 
 //---------------------------------------------------

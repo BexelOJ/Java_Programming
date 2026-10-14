@@ -565,6 +565,101 @@ equals()
 hashCode()
 
 //---------------------------------------------------
+Output:
+
+Initial HashMap:
+{A=100, B=200, C=300, D=400, E=500}
+
+After put("F", 600):
+{A=100, B=200, C=300, D=400, E=500, F=600}
+
+After put("C", 999):
+{A=100, B=200, C=999, D=400, E=500, F=600}
+
+After putIfAbsent("G", 700):
+{A=100, B=200, C=999, D=400, E=500, F=600, G=700}
+
+After putIfAbsent("C", 888):
+{A=100, B=200, C=999, D=400, E=500, F=600, G=700}
+
+map.get("C"): 999
+
+map.getOrDefault("Z", 0): 0
+
+map.containsKey("B"): true
+
+map.containsValue(400): true
+
+After remove("F"):
+{A=100, B=200, C=999, D=400, E=500, G=700}
+
+After remove("E", 500):
+{A=100, B=200, C=999, D=400, G=700}
+Result of remove("E", 500): true
+
+After replace("D", 444):
+{A=100, B=200, C=999, D=444, G=700}
+
+After replace("B", 200, 222):
+{A=100, B=222, C=999, D=444, G=700}
+Result of replace(): true
+
+After putAll(map2):
+{A=100, B=222, C=999, D=444, G=700, H=800, I=900}
+
+map.size(): 7
+
+map.isEmpty(): false
+
+map.keySet():
+[A, B, C, D, G, H, I]
+
+map.values():
+[100, 222, 999, 444, 700, 800, 900]
+
+map.entrySet():
+[A=100, B=222, C=999, D=444, G=700, H=800, I=900]
+
+Iterator over keySet():
+A = 100  B = 222  C = 999  D = 444  G = 700  H = 800  I = 900
+
+Iterator over entrySet():
+A = 100  B = 222  C = 999  D = 444  G = 700  H = 800  I = 900
+
+Enhanced for loop over keySet():
+A = 100  B = 222  C = 999  D = 444  G = 700  H = 800  I = 900
+
+Enhanced for loop over entrySet():
+A = 100  B = 222  C = 999  D = 444  G = 700  H = 800  I = 900
+
+forEach():
+A = 100  B = 222  C = 999  D = 444  G = 700  H = 800  I = 900
+
+After compute("A", value + 100):
+{A=200, B=222, C=999, D=444, G=700, H=800, I=900}
+
+After computeIfAbsent("J"):
+{A=200, B=222, C=999, D=444, G=700, H=800, I=900, J=1000}
+
+After computeIfPresent("B"):
+{A=200, B=322, C=999, D=444, G=700, H=800, I=900, J=1000}
+
+After merge("A", 50):
+{A=250, B=322, C=999, D=444, G=700, H=800, I=900, J=1000}
+
+After replaceAll(value + 1):
+{A=251, B=323, C=1000, D=445, G=701, H=801, I=901, J=1001}
+
+clone():
+{A=251, B=323, C=1000, D=445, G=701, H=801, I=901, J=1001}
+
+map.equals(cloned): true
+
+map.hashCode(): 5425
+
+After clear(): {}
+
+map.isEmpty(): true
 
 
 //---------------------------------------------------

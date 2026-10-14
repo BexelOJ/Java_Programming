@@ -434,6 +434,77 @@ range()
 complementOf()
 
 //---------------------------------------------------
+Output:
+
+
+EnumSet.allOf(Day.class):
+[MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY]
+
+EnumSet.noneOf(Day.class):
+[]
+
+After add():
+[MONDAY, WEDNESDAY, FRIDAY]
+
+After add(MONDAY):
+[MONDAY, WEDNESDAY, FRIDAY]
+Result of add(): false
+
+After remove(WEDNESDAY):
+[MONDAY, FRIDAY]
+Result of remove(): true
+
+emptyDays.contains(Day.MONDAY): true
+
+emptyDays.size(): 2
+
+emptyDays.isEmpty(): false
+
+EnumSet.of():
+[MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY]
+
+EnumSet.range(MONDAY, FRIDAY):
+[MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY]
+
+EnumSet.complementOf(workDays):
+[SATURDAY, SUNDAY]
+
+After addAll(weekends):
+[MONDAY, FRIDAY, SATURDAY, SUNDAY]
+
+emptyDays.containsAll(weekends): true
+
+After removeAll(weekends):
+[MONDAY, FRIDAY]
+
+After retainAll(selectedDays):
+[MONDAY, FRIDAY]
+
+Iterator:
+MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY
+
+Enhanced for loop:
+MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY
+
+forEach():
+MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY
+
+toArray():
+MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY
+
+After removeIf(MONDAY):
+[TUESDAY, WEDNESDAY, THURSDAY, FRIDAY]
+
+clone():
+[TUESDAY, WEDNESDAY, THURSDAY, FRIDAY]
+
+weekdays.equals(cloned): true
+
+weekdays.hashCode(): 719266819
+
+After clear(): []
+
+weekdays.isEmpty(): true
 
 
 //---------------------------------------------------

@@ -332,6 +332,64 @@ LinkedHashSet
     → no duplicates
 
 //---------------------------------------------------
+Output:
+
+Initial LinkedHashSet:
+[10, 20, 30, 40, 50]
+
+After add(60):
+[10, 20, 30, 40, 50, 60]
+
+After add(30):
+[10, 20, 30, 40, 50, 60]
+Result of add(30): false
+
+After remove(30):
+[10, 20, 40, 50, 60]
+Result of remove(30): true
+
+set.contains(40): true
+
+set.size(): 5
+
+set.isEmpty(): false
+
+After addAll(set2):
+[10, 20, 40, 50, 60, 70, 80, 90]
+
+set.containsAll(set2): true
+
+After removeAll(set2):
+[10, 20, 40, 50, 60]
+
+After retainAll(keep):
+[10, 40, 60]
+
+Iterator:
+10 40 60
+
+Enhanced for loop:
+10 40 60
+
+forEach():
+10 40 60
+
+After removeIf(value > 40):
+[10, 40]
+
+toArray():
+[10, 40]
+
+toArray(new Integer[0]):
+[10, 40]
+
+set.equals(set3): true
+
+set.hashCode(): 50
+
+After clear(): []
+
+set.isEmpty(): true
 
 
 //---------------------------------------------------

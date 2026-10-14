@@ -550,6 +550,100 @@ Hashtable
     → does NOT allow null keys or null values
 
 //---------------------------------------------------
+Output:
+
+Initial Hashtable:
+{A=100, E=500, D=400, C=300, B=200}
+
+After put("F", 600):
+{A=100, F=600, E=500, D=400, C=300, B=200}
+
+After put("C", 999):
+{A=100, F=600, E=500, D=400, C=999, B=200}
+
+After putIfAbsent("G", 700):
+{A=100, G=700, F=600, E=500, D=400, C=999, B=200}
+
+After putIfAbsent("C", 888):
+{A=100, G=700, F=600, E=500, D=400, C=999, B=200}
+
+table.get("C"): 999
+
+table.getOrDefault("Z", 0): 0
+
+table.containsKey("B"): true
+
+table.containsValue(400): true
+
+After remove("F"):
+{A=100, G=700, E=500, D=400, C=999, B=200}
+
+After remove("E", 500):
+{A=100, G=700, D=400, C=999, B=200}
+Result of remove(): true
+
+After replace("D", 444):
+{A=100, G=700, D=444, C=999, B=200}
+
+After replace("B", 200, 222):
+{A=100, G=700, D=444, C=999, B=222}
+Result of replace(): true
+
+After putAll(table2):
+{A=100, I=900, H=800, G=700, D=444, C=999, B=222}
+
+table.size(): 7
+
+table.isEmpty(): false
+
+table.keySet():
+[A, I, H, G, D, C, B]
+
+table.values():
+[100, 900, 800, 700, 444, 999, 222]
+
+table.entrySet():
+[A=100, I=900, H=800, G=700, D=444, C=999, B=222]
+
+Iterator over keySet():
+A = 100  I = 900  H = 800  G = 700  D = 444  C = 999  B = 222
+
+Iterator over entrySet():
+A = 100  I = 900  H = 800  G = 700  D = 444  C = 999  B = 222
+
+Enhanced for loop:
+A = 100  I = 900  H = 800  G = 700  D = 444  C = 999  B = 222
+
+forEach():
+B = 222  C = 999  D = 444  G = 700  H = 800  I = 900  A = 100
+
+After compute("A", value + 100):
+{A=200, I=900, H=800, G=700, D=444, C=999, B=222}
+
+After computeIfAbsent("J"):
+{A=200, J=1000, I=900, H=800, G=700, D=444, C=999, B=222}
+
+After computeIfPresent("B"):
+{A=200, J=1000, I=900, H=800, G=700, D=444, C=999, B=322}
+
+After merge("A", 50):
+{A=250, J=1000, I=900, H=800, G=700, D=444, C=999, B=322}
+
+After replaceAll(value + 1):
+{A=251, J=1001, I=901, H=801, G=701, D=445, C=1000, B=323}
+
+clone():
+{A=251, J=1001, I=901, H=801, G=701, D=445, C=1000, B=323}
+
+table.equals(cloned): true
+
+table.hashCode(): 5425
+
+After clear(): {}
+
+table.isEmpty(): true
+
+Hashtable does not allow null keys or null values.
 
 
 //---------------------------------------------------

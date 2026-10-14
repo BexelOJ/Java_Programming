@@ -505,6 +505,96 @@ Stack
   +-- search()→ search from top
 
 //---------------------------------------------------
+Output:
+
+Initial Stack:
+[10, 20, 30, 40, 50]
+
+After push(60):
+[10, 20, 30, 40, 50, 60]
+
+stack.peek(): 60
+
+stack.pop(): 60
+
+After pop():
+[10, 20, 30, 40, 50]
+
+stack.empty(): false
+
+stack.size(): 5
+
+stack.search(30): 3
+
+After add(70):
+[10, 20, 30, 40, 50, 70]
+
+After add(2, 100):
+[10, 20, 100, 30, 40, 50, 70]
+
+After addElement(80):
+[10, 20, 100, 30, 40, 50, 70, 80]
+
+stack.get(2): 100
+
+After set(2, 200):
+[10, 20, 200, 30, 40, 50, 70, 80]
+
+stack.contains(30): true
+
+stack.indexOf(30): 3
+
+stack.lastIndexOf(30): 8
+
+After remove(2):
+[10, 20, 30, 40, 50, 70, 80, 30]
+
+After remove(Integer.valueOf(30)):
+[10, 20, 40, 50, 70, 80, 30]
+
+After removeElement(40):
+[10, 20, 50, 70, 80, 30]
+
+After removeElementAt(1):
+[10, 50, 70, 80, 30]
+
+stack.firstElement(): 10
+
+stack.lastElement(): 30
+
+stack.elementAt(1): 50
+
+Iterator:
+10 50 70 80 30
+
+ListIterator forward:
+10 50 70 80 30
+
+ListIterator backward:
+30 80 70 50 10
+
+Enhanced for loop:
+10 50 70 80 30
+
+forEach():
+10 50 70 80 30
+
+toArray():
+[10, 50, 70, 80, 30]
+
+toArray(new Integer[0]):
+[10, 50, 70, 80, 30]
+
+clone():
+[10, 50, 70, 80, 30]
+
+stack.equals(cloned): true
+
+stack.hashCode(): 39423691
+
+After clear(): []
+
+stack.empty(): true
 
 
 //---------------------------------------------------
