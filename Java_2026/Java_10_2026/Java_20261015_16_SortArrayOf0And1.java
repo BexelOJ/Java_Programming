@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class SortZerosAndOnes {
+public class Java_20261015_16_SortArrayOf0And1 {
 
     public static void main(String[] args) {
 

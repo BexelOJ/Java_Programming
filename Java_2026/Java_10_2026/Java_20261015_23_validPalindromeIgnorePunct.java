@@ -1,4 +1,4 @@
-public class Java_20261016_ValidPalindrome {
+public class Java_20261015_23_validPalindromeIgnorePunct {
 
     public static void main(String[] args) {
 

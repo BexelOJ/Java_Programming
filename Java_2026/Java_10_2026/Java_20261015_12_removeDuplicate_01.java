@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class RemoveDuplicates {
+public class Java_20261015_12_removeDuplicate_01 {
 
     public static void main(String[] args) {
 

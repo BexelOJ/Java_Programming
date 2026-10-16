@@ -1,5 +1,5 @@
 
-public class FindAllUniquePairs {
+public class Java_20261015_19_findUniquePairsTargetSum {
 
     public static void main(String[] args) {
 

@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class MergeTwoSortedArrays {
+public class Java_20261015_08_mergerSortedArrays {
 
     public static void main(String[] args) {
 

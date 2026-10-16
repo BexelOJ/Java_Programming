@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Java_20261016_MergeTwoSortedArraysInPlace {
+public class Java_20261015_29_mergerTwoSortedArrays {
 
     public static void main(String[] args) {
 

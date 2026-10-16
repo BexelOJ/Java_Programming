@@ -4,7 +4,7 @@
  *          whose sum equals the target.
  */
 
-public class PairWithGivenSum {
+public class Java_20261015_06_targetSumInArray {
 
     public static void main(String[] args) {
 

@@ -1,5 +1,5 @@
 
-public class PairClosestToTarget {
+public class Java_20261015_18_findPairCloseToTargetSum {
 
     public static void main(String[] args) {
 

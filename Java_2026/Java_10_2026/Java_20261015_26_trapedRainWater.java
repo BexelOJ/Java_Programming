@@ -1,4 +1,4 @@
-public class Java_20261016_TrappingRainWater {
+public class Java_20261015_26_trapedRainWater {
 
     public static void main(String[] args) {
 

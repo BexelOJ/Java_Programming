@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Java_20261016_MoveNegativeNumbers {
+public class Java_20261015_28_moveNegativeNumbers {
 
     public static void main(String[] args) {
 

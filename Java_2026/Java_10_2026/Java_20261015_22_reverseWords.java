@@ -1,4 +1,4 @@
-public class Java_20261016_ReverseWordsInString {
+public class Java_20261015_22_reverseWords {
 
     public static void main(String[] args) {
 

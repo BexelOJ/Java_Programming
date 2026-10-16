@@ -1,5 +1,5 @@
 
-public class PalindromeCheck {
+public class Java_20261015_02_isStringPalindrome {
 
     public static void main(String[] args) {
 

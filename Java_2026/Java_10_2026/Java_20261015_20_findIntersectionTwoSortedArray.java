@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class IntersectionOfSortedArrays {
+public class Java_20261015_20_findIntersectionTwoSortedArray {
 
     public static void main(String[] args) {
 

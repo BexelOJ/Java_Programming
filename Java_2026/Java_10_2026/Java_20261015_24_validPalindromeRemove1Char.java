@@ -1,4 +1,4 @@
-public class Java_20261016_ValidPalindromeII {
+public class Java_20261015_24_validPalindromeRemove1Char {
 
     public static void main(String[] args) {
 

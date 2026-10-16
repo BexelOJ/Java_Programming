@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Java_20261016_PartitionArrayAroundPivot {
+public class Java_20261015_27_partitionArrayPivot {
 
     public static void main(String[] args) {
 

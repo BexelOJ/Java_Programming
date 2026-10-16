@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class SortColors {
+public class Java_20261015_17_SortColor {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-public class Java_20261016_ReverseOnlyVowels {
+public class Java_20261015_21_reverseVowels {
 
     public static void main(String[] args) {
 

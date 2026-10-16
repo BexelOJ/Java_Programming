@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class MoveZerosToEnd {
+public class Java_20261015_15_moveZeroToEnd {
 
     public static void main(String[] args) {
 

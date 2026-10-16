@@ -1,4 +1,4 @@
-public class Java_20261016_CompareStringsWithBackspaces {
+public class Java_20261015_30_compareTwoStringsWithBackspace {
 
     public static void main(String[] args) {
 

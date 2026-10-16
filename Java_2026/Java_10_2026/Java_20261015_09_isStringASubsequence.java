@@ -1,5 +1,5 @@
 
-public class CheckSubsequence {
+public class Java_20261015_09_isStringASubsequence {
 
     public static void main(String[] args) {
 

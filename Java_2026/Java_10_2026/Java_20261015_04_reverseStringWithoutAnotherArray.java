@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class ReverseString {
+public class Java_20261015_04_reverseStringWithoutAnotherArray {
 
     public static void main(String[] args) {
 

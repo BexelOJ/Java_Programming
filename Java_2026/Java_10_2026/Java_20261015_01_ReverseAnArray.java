@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ReverseArray {
+public class Java_20261015_01_ReverseAnArray {
 
     public static void main(String[] args) {
 

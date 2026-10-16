@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Java_20261016_ThreeSum {
+public class Java_20261015_31_uniqueTripletsSumToZero {
 
     public static void main(String[] args) {
 

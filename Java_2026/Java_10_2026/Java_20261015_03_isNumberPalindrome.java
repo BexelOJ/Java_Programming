@@ -1,5 +1,5 @@
 
-public class NumberPalindrome {
+public class Java_20261015_03_isNumberPalindrome {
 
     public static void main(String[] args) {
 

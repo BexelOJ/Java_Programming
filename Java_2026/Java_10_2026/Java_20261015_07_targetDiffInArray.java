@@ -1,5 +1,5 @@
 
-public class PairWithGivenDifference {
+public class Java_20261015_07_targetDiffInArray {
 
     public static void main(String[] args) {
 

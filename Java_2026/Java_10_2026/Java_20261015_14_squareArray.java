@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class SquaresOfSortedArray {
+public class Java_20261015_14_squareArray {
 
     public static void main(String[] args) {
 
