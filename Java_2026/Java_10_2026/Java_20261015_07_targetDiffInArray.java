@@ -1,1 +1,50 @@
-i
+
+public class PairWithGivenDifference {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 3, 5, 8, 10, 12};
+        int target = 4;
+
+        int left = 0;
+        int right = 1;
+
+        boolean found = false;
+
+        while (left < arr.length && right < arr.length) {
+
+            if (left == right) {
+                right++;
+                continue;
+            }
+
+            int difference = arr[right] - arr[left];
+
+            if (difference == target) {
+
+                System.out.println(
+                    "Pair found: " + arr[left] + " and " + arr[right]
+                );
+
+                found = true;
+                break;
+
+            } else if (difference < target) {
+
+                right++;
+
+            } else {
+
+                left++;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No pair found");
+        }
+    }
+}
+
+
+
+
